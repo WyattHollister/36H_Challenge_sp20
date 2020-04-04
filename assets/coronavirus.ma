@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: coronavirus.ma
-//Last modified: Sat, Apr 04, 2020 02:14:48 PM
+//Last modified: Sat, Apr 04, 2020 02:18:02 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -18,8 +18,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "60F2BFBB-4730-941B-AED5-8B91C90ABA81";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.3104732086816506 2.7057268170963664 4.7924426520158949 ;
-	setAttr ".r" -type "double3" 1419.2616472682589 -2221.7999999996832 -3.3653047649939396e-15 ;
+	setAttr ".t" -type "double3" -1.6741392755791182 1.6892361510415035 9.1735633343864009 ;
+	setAttr ".r" -type "double3" 1426.4616472686491 -2889.4000000004721 0 ;
 	setAttr ".rp" -type "double3" -4.5474735088646412e-13 -1.1368683772161603e-13 -5.6843418860808015e-14 ;
 	setAttr ".rpt" -type "double3" -1.295496309796704e-14 5.0467201017804456e-14 4.2391861649570198e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -7153,10 +7153,10 @@ createNode ramp -n "ramp3";
 	rename -uid "B193D356-4D99-CD32-26A3-1C87789C8232";
 	setAttr ".in" 0;
 	setAttr -s 2 ".cel";
-	setAttr ".cel[1].ep" 0.86904764175415039;
+	setAttr ".cel[1].ep" 0.57142859697341919;
 	setAttr ".cel[1].ec" -type "float3" 1 1 1 ;
 	setAttr ".cel[2].ep" 0;
-	setAttr ".cel[2].ec" -type "float3" 0.199 0.0995 0.19134679 ;
+	setAttr ".cel[2].ec" -type "float3" 0.199 0.172135 0.19693364 ;
 createNode place2dTexture -n "place2dTexture4";
 	rename -uid "F7368F51-47B3-7434-6720-819F4C4885CF";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
