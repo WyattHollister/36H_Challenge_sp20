@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: polaroid_frame.ma
-//Last modified: Sat, Apr 04, 2020 09:08:05 PM
+//Last modified: Sat, Apr 04, 2020 09:12:28 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -341,22 +341,22 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E21C4A88-6E45-EA30-6BAF-CFBAD8808971";
+	rename -uid "FD005278-374F-8444-34A2-B1B26BE23C8C";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "B2523F5E-0244-A1D3-1AAD-D7BF8152BCA1";
+	rename -uid "FCA052F5-2243-DECA-D92F-B4A8A0D0B4F5";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "352805C2-D44E-96A9-8288-6D954147A237";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "CC2FC03D-CB4D-DE9F-C2FB-19B950F6FA6B";
+	rename -uid "9397299A-A446-4B22-917E-EDBD626B62AD";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E4C16E11-DB4A-78E6-6760-4AB3C9B1AAB4";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A13271BA-9F4A-8645-BE8F-C2BA95946C03";
+	rename -uid "CF8456FE-1740-D573-5037-F18EE7344B21";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "188C2852-104F-5C66-0C65-05BE37B448AC";
+	rename -uid "C7089C9F-934C-55B9-581F-FEB0ACC7C887";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "B6208738-9745-3EDE-BA1F-9F80B543891C";
 	setAttr ".b" -type "string" (
