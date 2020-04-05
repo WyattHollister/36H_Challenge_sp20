@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: wires_and_cables.ma
-//Last modified: Sat, Apr 04, 2020 06:38:25 PM
+//Last modified: Sat, Apr 04, 2020 07:21:59 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -16,13 +16,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "36D2D52A-C142-4F8B-CCE7-05A6E91A373F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.898142267841596 14.887741172237163 -22.357921229745006 ;
+	setAttr ".t" -type "double3" -15.678374773549143 29.828786410871608 -42.98011555224258 ;
 	setAttr ".r" -type "double3" -34.538352729606608 -161.79999999999887 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0F860F41-0646-BCC5-0D01-64AA127962EF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 25.916931083599383;
+	setAttr ".coi" 52.269943896733736;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
