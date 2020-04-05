@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: wires_and_cables.0001.ma
-//Last modified: Sat, Apr 04, 2020 06:53:35 PM
+//Last modified: Sat, Apr 04, 2020 07:30:16 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -8022,22 +8022,22 @@ createNode directionalLight -n "directionalLightShape1" -p "directionalLight1";
 	setAttr -k off ".v";
 	setAttr ".in" 15;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9BEFA8B0-5949-2B53-AB88-CEAEBAF500B9";
+	rename -uid "07DD7C9A-7D47-F226-E88E-9FB136464D08";
 	setAttr -s 7 ".lnk";
 	setAttr -s 7 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "1D12BA66-6943-D57D-314B-7888CB28F466";
+	rename -uid "838D4FED-F94B-0EC9-04D3-77A6B3E9A3C6";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "EB1E0F6A-934C-FF9A-6129-8E84DBC82497";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7CD053E5-884C-0ADC-92EF-A4B94997F58A";
+	rename -uid "99B77DDD-5B4F-EE47-55A6-C3AF0EF9F606";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "85251D8F-3149-0698-529D-3EA7F9A7B3EE";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "295E7DBA-C54E-F514-BB38-CD897AE0CA56";
+	rename -uid "FDEE44E2-8243-BB6D-A861-B18890C52321";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C033A7C0-0540-B92C-4757-B3AD2161C3EC";
+	rename -uid "58473D19-A140-D39F-5E87-C4BE37991F7B";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "EF058D28-0C47-D67E-EE43-ACA1434349E2";
 	setAttr ".b" -type "string" (
