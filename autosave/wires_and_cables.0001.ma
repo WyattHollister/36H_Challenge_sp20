@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: wires_and_cables.0001.ma
-//Last modified: Sat, Apr 04, 2020 07:30:16 PM
+//Last modified: Sat, Apr 04, 2020 07:35:47 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -8022,22 +8022,22 @@ createNode directionalLight -n "directionalLightShape1" -p "directionalLight1";
 	setAttr -k off ".v";
 	setAttr ".in" 15;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "07DD7C9A-7D47-F226-E88E-9FB136464D08";
+	rename -uid "90E584BF-9448-5EAC-9ADE-ECA43B968201";
 	setAttr -s 7 ".lnk";
 	setAttr -s 7 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "838D4FED-F94B-0EC9-04D3-77A6B3E9A3C6";
+	rename -uid "B8EE4495-D34C-6359-81F8-97AA11A89442";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "EB1E0F6A-934C-FF9A-6129-8E84DBC82497";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "99B77DDD-5B4F-EE47-55A6-C3AF0EF9F606";
+	rename -uid "C0B6DC3E-1344-E83B-4D20-8EAF54C4EDB2";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "85251D8F-3149-0698-529D-3EA7F9A7B3EE";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "FDEE44E2-8243-BB6D-A861-B18890C52321";
+	rename -uid "00056A08-4D46-9439-476D-4BA0088B5FE1";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "58473D19-A140-D39F-5E87-C4BE37991F7B";
+	rename -uid "FF342A39-C54A-0BB1-8DBF-F9A2699D749F";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "EF058D28-0C47-D67E-EE43-ACA1434349E2";
 	setAttr ".b" -type "string" (
@@ -8425,6 +8425,10 @@ relationship "shadowLink" ":lightLinker1" "aiToon4SG.message" ":defaultLightSet.
 relationship "shadowLink" ":lightLinker1" "aiToon5SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
+		 -na;
+connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
+connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "ramp1.oc" "red_wire.base_tonemap";
 connectAttr "ramp2.oc" "red_wire.rim_light_color";
 connectAttr "red_wire.out" "aiToon1SG.ss";
