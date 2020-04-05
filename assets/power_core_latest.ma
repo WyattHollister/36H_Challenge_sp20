@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: power_core_latest.ma
-//Last modified: Sat, Apr 04, 2020 06:02:12 PM
+//Last modified: Sat, Apr 04, 2020 06:03:43 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -18,8 +18,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "9811810F-431E-EC12-250B-F3BE4954F2E7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.122540579384019 7.394369148795727 -1.7375695259626658 ;
-	setAttr ".r" -type "double3" -2.1383527343488731 -453.79999999654888 0 ;
+	setAttr ".t" -type "double3" -27.15455510113657 5.7517483383723924 -1.5201851520031295 ;
+	setAttr ".r" -type "double3" 0.86164726565116934 -453.39999999654873 0 ;
 	setAttr ".rp" -type "double3" 0 4.4408920985006262e-16 3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" -2.1706203141423691e-15 1.7336804213358643e-15 -1.718397295196451e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
