@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: set_interior.ma
-//Last modified: Sat, Apr 04, 2020 07:19:17 PM
+//Last modified: Sat, Apr 04, 2020 07:23:28 PM
 //Codeset: 1252
 file -rdi 1 -ns "power_core_latest" -rfn "power_core_latestRN" -op "v=0;" -typ
 		 "mayaAscii" "D:/36H_Challenge_sp20//assets/power_core_latest.ma";
@@ -64,15 +64,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4E8C5D63-4442-0EBE-2592-E88B7ABB04C0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -19.933905835910423 6.7658928595155388 28.883253298964551 ;
-	setAttr ".r" -type "double3" -6.3383527295179309 -743.79999999987331 2.172605794290629e-16 ;
+	setAttr ".t" -type "double3" -21.071693510743643 11.057085253849333 34.060462680329415 ;
+	setAttr ".r" -type "double3" -8.1383527295179405 -751.39999999987276 0 ;
 	setAttr ".rp" -type "double3" -1.27675647831893e-15 -2.2204460492503131e-16 3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" 2.1485381614896429e-13 1.1373092462045889e-13 3.8588042675028884e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CFE8D230-4AFD-37DD-2051-A0BD14FEBCC8";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 31.899105504714427;
+	setAttr ".coi" 37.556380163256236;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
